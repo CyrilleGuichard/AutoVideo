@@ -6,8 +6,8 @@ namespace AutoVideo
     {
         static void Main(string[] args)
         {
-            AutoVideoMaker.Musics.Add(new Music("audio1.mp3", "i1.jpg"));
-            AutoVideoMaker.Musics.Add(new Music("audio2.mp3", "i2.jpg"));
+            AutoVideoMaker.Musics.Add(new Music("audio1.mp3", "i1.jpg", 60, 90));
+            AutoVideoMaker.Musics.Add(new Music("audio2.mp3", "i2.jpg", 60, 90));
             AutoVideoMaker.GenerateVideo();
 
             Console.ReadLine();

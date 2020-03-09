@@ -21,11 +21,11 @@ namespace AutoVideo
                 StartInfo = {
                     WindowStyle = ProcessWindowStyle.Hidden,
                     FileName = "cmd.exe",
-                    Arguments = "/C D:\\Documents\\Logiciel\\ffmpeg-4.2.2-win64-static\\bin\\ffmpeg.exe " + command
+                    Arguments = "/C C:\\FFmpeg\\bin\\ffmpeg.exe " + command
                 },
                 EnableRaisingEvents = true
             };
-            Console.WriteLine("D:\\Documents\\Logiciel\\ffmpeg-4.2.2-win64-static\\bin\\ffmpeg.exe " + command);
+            Console.WriteLine("C:\\FFmpeg\\bin\\ffmpeg.exe " + command);
 
             process.Exited += (sender, args) =>
             {
